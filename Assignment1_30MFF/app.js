@@ -9,8 +9,9 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
+// reference: https://www.youtube.com/watch?v=T33NN_pPeNI
 
-const hiddenSteps = document.querySelectorAll(".steps-container .hidden-steps");
+const hiddenSteps = document.querySelectorAll(" .hidden-steps");
 
 hiddenSteps.forEach((elem) => observer.observe(elem));
 

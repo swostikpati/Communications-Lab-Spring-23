@@ -42,9 +42,10 @@ body {
 
 .nav_links li a {
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 30px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 25px;
     color: azure;
     text-decoration: none;
 
@@ -98,8 +99,9 @@ body {
     width: 120px;
 }
 
-h2 {
-    font-family: 'Questrial', sans-serif;
+h3 {
+    font-family: "Inter";
+    font-weight: 300;
     font-size: 50px;
     letter-spacing: 1.5px;
     text-align: center;
@@ -109,16 +111,14 @@ h2 {
 /* Styling the Tutorial Page */
 
 .tutorial {
-    height: 400vh;
-}
-
-.tutorial h2 {
+    height: auto;
     color: white;
 }
 
+
 .steps-container {
     padding-top: 50px;
-    height: 380vh;
+    height: auto;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -126,28 +126,54 @@ h2 {
     flex-direction: column;
 }
 
-.steps-container div {
-    background-color: orange;
-    height: 50px;
-    width: 50px;
-    height: 90vh;
+.steps-container .hidden-steps {
+    margin: 45vh 0;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    justify-content: center;
+    align-items: center;
+    /* margin: 40px; */
 
 
+}
+
+.steps-container div p {
+    text-align: center;
+    font-family: "Inter";
+    font-size: 30px;
+    font-weight: 200;
+    padding: 40px;
+}
+
+.steps-container div img {
+    width: 800px;
+    height: 500px;
 }
 
 .hidden-steps {
     opacity: 0;
-    transition: all 1s;
+    filter: blur(3px);
+    transition: all 1.5s;
 }
 
 .show-steps {
     opacity: 1;
+    filter: blur(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-steps {
+        opacity: 0;
+        filter: blur(5px);
+        transition: all 1.75s;
+    }
+
 }
 
 /* Styling the Result Page */
 
 .result {
-    height: 100vh;
+    height: auto;
 
 }
 
@@ -162,7 +188,19 @@ h2 {
     align-items: center;
     padding-top: 50px;
     margin-top: 50x;
-    /* flex-direction: column; */
+    flex-direction: column;
+}
+
+.result .hidden-steps {
+    margin-bottom: 70px;
+    margin-top: 0px;
+}
+
+.result .hidden-steps p {
+    margin-top: 20px;
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 30px;
 }
 
 
@@ -175,16 +213,40 @@ footer {
     border-top: 1px white dashed;
 }
 
-footer h3 {
+footer p {
     margin-top: 15px;
     margin-bottom: 0;
     text-align: center;
 }
 
-footer h3 a {
+footer p a {
     text-decoration: none;
     font-family: "Inter";
     font-weight: 100;
     letter-spacing: 4px;
     color: whitesmoke;
 }
+
+/* Styling Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: cyan;
+}
+
+/* reference: https: //www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
