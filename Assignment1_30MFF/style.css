@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 5%;
+    padding: 0px 6%;
     height: auto;
     background-color: #121212;
     border-bottom: white solid 1px;
@@ -240,7 +240,7 @@ footer p a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: #fff;
     border-radius: 5px;
 }
 
