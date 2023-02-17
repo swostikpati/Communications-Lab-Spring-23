@@ -155,8 +155,9 @@ h3 {
     right: 100px;
     bottom: 100px;
     /* background-color: yellow; */
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
+    display: none;
 }
 
 /* @media() - use scrolltop*/
