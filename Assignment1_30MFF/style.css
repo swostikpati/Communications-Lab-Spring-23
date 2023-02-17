@@ -150,6 +150,16 @@ h3 {
     height: 500px;
 }
 
+.go-to-top {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    /* background-color: yellow; */
+    height: 35px;
+    width: 35px;
+}
+
+/* @media() - use scrolltop*/
 /* Used for scroll animation */
 
 .hidden-steps {
