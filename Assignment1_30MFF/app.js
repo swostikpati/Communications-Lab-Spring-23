@@ -32,3 +32,5 @@ window.addEventListener("scroll", (event) => {
         up_arrow.style.display = "none";
     }
 });
+
+//reference: https://stackoverflow.com/questions/2481350/how-can-i-get-the-scrollbar-position-with-javascript
