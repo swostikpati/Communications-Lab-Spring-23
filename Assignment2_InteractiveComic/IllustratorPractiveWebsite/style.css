@@ -1,0 +1,40 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#mountain_svg {
+    position: absolute;
+    left: 0;
+    top: -250px;
+    transform: scale(1.2);
+
+}
+
+/* #Mountain1,
+#Mountain2:hover,
+#Mountain3,
+#Mountain4,
+#Mountain5,
+#Mountain6,
+#Mountain7,
+#Mountain8,
+#Mountain9,
+#Mountain10 {
+    transition: all 5s;
+}
+
+#Mountain1:hover,
+#Mountain2:hover,
+#Mountain3:hover,
+#Mountain4:hover,
+#Mountain5:hover,
+#Mountain6:hover,
+#Mountain7:hover,
+#Mountain8:hover,
+#Mountain9:hover,
+#Mountain10:hover {
+    transform: scale(1.05);
+    /* transform: translate(0, -2px); 
+} */
