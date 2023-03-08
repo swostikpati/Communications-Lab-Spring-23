@@ -1,0 +1,36 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* make the body infinitely scrollable */
+    /* overflow: hidden; */
+    height: 1000vh;
+    background-color: black;
+}
+
+#comic_object {
+    /* make the width cover the entire screen width; */
+    width: 100vw;
+    /* make the height cover the entire screen height; */
+    height: 100vh;
+    /* make the position absolute */
+    position: fixed;
+    /* make the top 0 */
+    top: 0;
+    /* make the left 0 */
+    left: 0;
+
+
+
+
+}
+
+/* g {
+    display: none;
+} */
+
+/* #f70i,
+#f69i,
+#f68i {
+    display: none;
+} */
