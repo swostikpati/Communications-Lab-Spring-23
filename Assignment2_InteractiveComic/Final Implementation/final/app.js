@@ -83,7 +83,7 @@ let filteredFramesArr = [];
 let fFAIndex = 0;
 
 
-
+// Creates the array of array of filtered frames for every scene
 function createFilteredFramesArr() {
     let i = 0;
     let currFrameArr = [];
@@ -94,8 +94,10 @@ function createFilteredFramesArr() {
         let frameNo;
         frameNo = getFrameNo(currFrame);
         i++;
+        // checks for subsequent frames with the same frame number
         while ((i < filteredFrames.length - 1) && frameNo == getFrameNo(filteredFrames[i])) {
             currFrameArr.push(filteredFrames[i]);
+            // checking for end condition
             if (i > filteredFrames.length - 1) {
                 flag = false;
                 break;
@@ -103,9 +105,11 @@ function createFilteredFramesArr() {
             frameNo = getFrameNo(filteredFrames[i]);
             i++;
         }
+        // adds the frame array to the filtered frames array
         filteredFramesArr[fFAIndex] = currFrameArr;
         currFrameArr = [];
         fFAIndex++;
+        // checking for end condition
         if (i > filteredFrames.length - 1) {
             flag = false;
             break;
