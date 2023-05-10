@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&family=Questrial&display=swap');
+body {
+    background-color: black;
+    font-family: "Inter";
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 0 20px white;
+    border: 2px solid white;
+    transition: all 0.5s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    border: 2px solid#24B3A8;
+    ;
+    box-shadow: 0 0 20px #24B3A8;
+    ;
+}
+
+.image-text {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .image {
+        margin: 20px 0;
+    }
+}
