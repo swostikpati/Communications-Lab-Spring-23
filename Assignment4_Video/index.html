@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dumb Choices Only</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="video-container">
+    <button id="replay-button"> Replay </button>
+    <!-- intro video -->
+    <video id="video_player1" class="video-player" controls>
+      <source src="./assets/videos/intro_new.mp4" type="video/mp4">
+    </video>
+    <!-- first three options -->
+    <!-- visual design studio -->
+    <video id="video_player2" class="video-player" controls>
+      <source src="./assets/videos/design_lab.mp4" type="video/mp4">
+    </video>
+    <!-- im lab -->
+    <video id="video_player3" class="video-player" controls>
+      <source src="./assets/videos/im_lab.mp4" type="video/mp4">
+    </video>
+    <!-- lobby -->
+    <video id="video_player4" class="video-player" controls>
+      <source src="./assets/videos/lobby.mp4" type="video/mp4">
+    </video>
+
+    <!-- second level options - design studio -->
+    <!-- sleep -->
+    <video id="video_player5" class="video-player" controls>
+      <source src="./assets/videos/design_lab_sleep.mp4" type="video/mp4">
+    </video>
+    <!-- work -->
+    <video id="video_player6" class="video-player" controls>
+      <source src="./assets/videos/design_lab_work.mp4" type="video/mp4">
+    </video>
+
+    <!-- second level options - im lab -->
+    <!-- inside -->
+    <video id="video_player7" class="video-player" controls>
+      <source src="./assets/videos/im_lab_inside.mp4" type="video/mp4">
+    </video>
+    <!-- outside -->
+    <video id="video_player8" class="video-player" controls>
+      <source src="./assets/videos/im_lab_outside.mp4" type="video/mp4">
+    </video>
+
+    <!-- second level options - lobby -->
+    <!-- punch -->
+    <video id="video_player9" class="video-player" controls>
+      <source src="./assets/videos/lobby_punch.mp4" type="video/mp4">
+    </video>
+    <!-- get punched -->
+    <video id="video_player10" class="video-player" controls>
+      <source src="./assets/videos/lobby_getpunched.mp4" type="video/mp4">
+    </video>
+
+    <!-- respect -->
+    <video id="respect" class="video-player" controls>
+      <source src="./assets/videos/respect.mp4" type="video/mp4">
+    </video>
+
+    <!-- wasted -->
+    <video id="wasted" class="video-player" controls>
+      <source src="./assets/videos/wasted.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="menu1" class="menu">
+    <p class="select_text"> Pauline should:</p>
+    <ul>
+      <li id="vd_studio">
+        <p>Work in the Design Studio</p>
+      </li>
+      <li id="im_lab">
+        <p>Hangout in the IM lab</p>
+      </li>
+      <li id="lobby">
+        <p>Hangout in the Lobby</p>
+      </li>
+    </ul>
+  </div>
+
+  <div id="menu2" class="menu">
+    <p class="select_text"> Pauline should:</p>
+    <ul>
+      <li id="vd_studio_sleep">
+        <p>Take a nap</p>
+      </li>
+      <li id="vd_studio_work">
+        <p>Work on assignment</p>
+      </li>
+    </ul>
+  </div>
+
+  <div id="menu3" class="menu">
+    <p class="select_text"> Pauline should:</p>
+    <ul>
+      <li id="im_lab_inside">
+        <p>Throw the peel on the floor</p>
+      </li>
+      <li id="im_lab_outside">
+        <p>Throw the peel outside</p>
+      </li>
+    </ul>
+  </div>
+
+  <div id="menu4" class="menu">
+    <p class="select_text"> Pauline should:</p>
+    <ul>
+      <li id="lobby_punch">
+        <p>Randomly punch</p>
+      </li>
+      <li id="lobby_getpunched">
+        <p>Keep walking</p>
+      </li>
+    </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
